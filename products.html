@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-compatible" content="ie=edge" />
+  <title>Shopy shop any where</title>
+  <meta name="keywords" content="shopping mall, jacket, men, women" />
+  <meta name="description" content="shop any where for women and men's ware" />
+  <meta name="robots" content="index, follow" />
+  <!-- open graph -->
+  <!-- 공유할때 받은사람한테 사이트의 이름, 대표적인 이미지,설명등 보내지는 것 -->
+  <meta property="og:title" content="Shopy shop any where" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.shopy.com" />
+  <meta property="og:image" content="https://www.shopy.com/images/logo.png" />
+  <meta property="og:description" content="shop any where for women and men's ware" />
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- fontawesome -->
+  <script src="js/all.min.js"></script>
+
+  <!-- bootstrap grid -->
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- jquery UI -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- custom -->
+  <link rel="stylesheet" href="css/product.css" />
+  <script src="js/products.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="top_nav">
+      <div class="container">
+        <div class="row justify-content-between">
+          <ul class="contact_list">
+            <li>
+              <span class="envelope sprites">envelope</span>
+              <a href="mailto:info@shopy.com">info@shopy.com</a>
+            </li>
+            <li>
+              <span class="call sprites">phone</span>
+              <span>453 - 5553 - 996</span>
+            </li>
+          </ul>
+          <ul class="sosial_list">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-google-plus-g"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="main_nav">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="gnb">
+            <h1 class="logo"><a href="./index.html">shopy logo</a></h1>
+            <ul class="menu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./products.html" class="active">Products</a></li>
+              <li><a href="./detail.html">Hot Deals</a></li>
+              <li><a href="#a">About</a></li>
+              <li><a href="#a">Contact</a></li>
+            </ul>
+          </div>
+          <ul class="shopping_nav">
+            <li><span class="search_btn sprites">search</span></li>
+            <li><a href="#a" class="my_page sprites">my page</a></li>
+            <li><a href="#a" class="cart sprites" data-cart="5">cart</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <form action="#a" method="get">
+      <input type="text" />
+      <input type="submit" value="검색" class="search_btn sprites" />
+    </form>
+  </header>
+  <!-- header -->
+
+  <main class="container product_page">
+    <section class="filters">
+      <h2 class="hidden">category filter</h2>
+      <div class="category_menu">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#a">Man</a></li>
+          <li><a href="#a">Women</a></li>
+          <li><a href="#a">Childrens</a></li>
+          <li><a href="#a">Hot Deals</a></li>
+        </ul>
+      </div>
+      <div class="list_filter">
+        <div class="price_filter">
+          <h3>Price Filtter</h3>
+          <div class="price_range"></div>
+          <div class="range_form">
+            <label for="from">From</label>
+            <input type="text" id="from" />
+            <label for="to">To</label>
+            <input type="text" id="to" />
+          </div>
+        </div>
+        <div class="size_filter">
+          <h3>Sizes</h3>
+          <input type="checkbox" id="small" name="size" value="small" />
+          <span class="box">box</span>
+          <label for="small">Small</label>
+
+          <input type="checkbox" id="midum" name="size" value="midium" />
+          <span class="box">box</span>
+          <label for="midum">Midum</label>
+
+          <input type="checkbox" id="larg" name="size" value="large" />
+          <span class="box">box</span>
+          <label for="larg">Larg</label>
+
+          <input type="checkbox" id="xlarg" name="size" value="xlarge" />
+          <span class="box">box</span>
+          <label for="xlarg">X larg</label>
+        </div>
+        <div class="brand_filter">
+          <h3>Brands</h3>
+          <input type="checkbox" id="reebok" name="brand" />
+          <span class="box">box</span>
+          <label for="reebok">Reebok</label>
+
+          <input type="checkbox" id="addidas" name="brand" />
+          <span class="box">box</span>
+          <label for="addidas">Addidas</label>
+
+          <input type="checkbox" id="nike" name="brand" />
+          <span class="box">box</span>
+          <label for="nike">Nike</label>
+
+          <input type="checkbox" id="puma" name="brand" />
+          <span class="box">box</span>
+          <label for="puma">Puma</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="new_arrivals">
+      <h2 class="content_title"><span>Men's</span> Clothes</h2>
+      <p class="content_desc">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry
+      </p>
+      <ul class="new_arrivals_list row">
+        <li id="product_01" class="col-md-3 small">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_01.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_02" class="col-md-3 large">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_02.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_03" class="col-md-3 midium">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_03.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_04" class="col-md-3 midium">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_01.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_01" class="col-md-3 small">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_01.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_02" class="col-md-3 large">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_02.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_03" class="col-md-3 xlarge">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_03.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_04" class="col-md-3 midium">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_01.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_01" class="col-md-3 small">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_01.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_02" class="col-md-3 large">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_02.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_03" class="col-md-3 xlarge">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_03.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="product_04" class="col-md-3 midium">
+          <div class="list_contents">
+            <div class="defalut">
+              <img src="images/jacket_01.jpg" alt="jacket" />
+              <h3>Reebok Track Jacket</h3>
+              <h4>100$</h4>
+            </div>
+            <div class="hover">
+              <p>
+                sizes :
+                <span class="size"> s - m - l - xl</span>
+              </p>
+              <p class="color">
+                <span class="Crimson">Crimson</span>
+                <span class="DarkBlue">DarkBlue</span>
+                <span class="DeepSkyBlue">DeepSkyBlue</span>
+                <span class="LimeGreen">LimeGreen</span>
+              </p>
+              <hr />
+              <ul>
+                <li><a href="#a" class="sprites share">share</a></li>
+                <li><a href="#a" class="sprites addcart">addcart</a></li>
+                <li><a href="#a" class="sprites wishlist">wishlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button class="hidden"><span class="sprites load_more"></span></button>
+    </section>
+    <!-- new arrival -->
+
+    <section class="hot_deal hidden">
+      <h2>Hot deal</h2>
+    </section>
+    <!-- hot_deal -->
+    <section class="best_sales hidden">
+      <h2>Best sales</h2>
+    </section>
+    <!-- best_sales -->
+    <section class="news_letter hidden">
+      <h2>News letter</h2>
+    </section>
+    <!-- news_letter -->
+
+  </main>
+  <footer></footer>
+</body>
+
+</html>

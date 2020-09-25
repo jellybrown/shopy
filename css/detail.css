@@ -1,0 +1,164 @@
+@import url(main.css);
+
+.product_info {
+    padding: 100px 0 125px;
+    background: #fff;
+}
+
+.product_pictures {
+    padding: 0 70px;
+    text-align: center;
+}
+
+.product_pictures .thum_img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+
+}
+
+.product_pictures .thum_img li {
+    width: 95px;
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f6f8;
+    transition: 0.5s;
+}
+
+.product_pictures .thum_img li:hover {
+    cursor: pointer;
+}
+
+.product_pictures .thum_img li img {
+    transition: 0.5s;
+}
+
+.product_pictures .thum_img li.active {
+    background: #ff5912;
+}
+
+.product_pictures .thum_img li.active img {
+    opacity: 0.3;
+}
+
+.product_specs {
+    padding-right: 50px;
+}
+
+
+.product_specs.jumbotron h3 {
+    margin: 30px 0;
+}
+
+.product_specs.jumbotron p {
+    margin: 0;
+    line-height: 30px;
+}
+
+.product_specs hr {
+    border: none;
+    border-bottom: 1px solid #edeff1;
+    margin: 30px 0;
+}
+
+.option {
+    margin: 0 1px;
+}
+
+.option .size {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #34404b;
+}
+
+.option .size label {
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.option .size input {
+    display: none;
+}
+
+.option .size input:checked+label {
+    color: #ff5912;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.option h4 {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #34404b;
+    font-weight: 600;
+}
+
+.option .quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity input {
+    border: none;
+    color: #ff5912;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.quantity div {
+    font-weight: 600;
+    font-size: 18px;
+    color: #34404b;
+    cursor: pointer;
+}
+
+.order_summary {
+    align-items: center;
+    margin: 0 1px;
+}
+
+.order_summary .price_info {
+    font-size: 20px;
+    font-weight: 800;
+    color: #34404b;
+}
+
+.order_summary .price_info h4 {
+    display: inline-block;
+    font-weight: 800;
+}
+
+
+.order_summary .order_now {
+    display: flex;
+    align-items: center;
+
+}
+
+.order_summary .order_now ul {
+    display: flex;
+}
+
+.order_summary .order_now ul li {
+    margin: 0 15px;
+
+}
+
+.order_summary .order_now button {
+    background: #ff5912;
+    width: 134px;
+    height: 49px;
+    border-radius: 22px;
+    line-height: 49px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    margin-left: 10px;
+}
